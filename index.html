@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link href="notify.css" rel="stylesheet"/>
+</head>
+<body>
+	
+	<p onclick="showError();">Click to Show error message </p>
+	<p onclick="showSuccess();">Click to Show success message </p>
+	<p onclick="showInfo();">Click to Show information message </p>
+	<p onclick="showWarning();">Click to Show warning message </p>
+	
+	<!-- include jquery -->
+	<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	<!-- include the notif-js -->
+	<script type="text/javascript" src="notify.js"></script>
+
+
+	<!-- demos-->
+	<script type="text/javascript">
+		
+		function showError(){
+			notify('error','Heading',"This is error message");
+		}
+		
+		function showSuccess(){
+		    notify('success','Heading',"This is success message");
+		}
+		function showInfo(){
+            notify('info','Heading',"This is information message");
+        }
+        function showWarning(){
+            notify('warning','Heading',"This is warning message");
+        }
+        
+	</script>
+</body>
+</html>
