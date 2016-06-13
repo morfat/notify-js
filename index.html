@@ -4,12 +4,23 @@
     <link href="notify.css" rel="stylesheet"/>
 </head>
 <body>
-	
+	<h4>Normal messages</h4>
 	<p onclick="showError();">Click to Show error message </p>
 	<p onclick="showSuccess();">Click to Show success message </p>
 	<p onclick="showInfo();">Click to Show information message </p>
 	<p onclick="showWarning();">Click to Show warning message </p>
 	
+	<!--
+	<h4>Other demos </h4>
+	
+	<p onclick="showStickyError();">Click to Show Sticky error message </p>
+    <p onclick="showStickySuccess();">Click to Show Sticky success message </p>
+    <p onclick="showStickyInfo();">Click to Show Sticky information message </p>
+    <p onclick="showStickyWarning();">Click to Show Sticky warning message </p>
+    -->
+    
+    
+    
 	<!-- include jquery -->
 	<script type="text/javascript" src="jquery-2.1.4.js"></script>
 	<!-- include the notif-js -->
@@ -19,6 +30,7 @@
 	<!-- demos-->
 	<script type="text/javascript">
 		
+		//normal notifications
 		function showError(){
 			notify('error','Heading',"This is error message");
 		}
@@ -31,6 +43,23 @@
         }
         function showWarning(){
             notify('warning','Heading',"This is warning message");
+        }
+        
+        
+        //sticky notifications
+            
+        function showStickyError(){
+            stickyNotify('error','Heading',"This is error message");
+        }
+        
+        function showStickySuccess(){
+            stickyNotify('success','Heading',"This is success message");
+        }
+        function showStickyInfo(){
+            stickyNotify('info','Heading',"This is information message");
+        }
+        function showStickyWarning(){
+            stickyNotify('warning','Heading',"This is warning message");
         }
         
 	</script>

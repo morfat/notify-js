@@ -438,28 +438,9 @@ var message_options={
   "hideMethod": "slideUp"
 };
 
-var sticky_options= {
-  "closeButton": true,
-  "debug": false,
-  "newestOnTop": false,
-  "progressBar": true,
-  "positionClass": "toast-bottom-right",
-  "preventDuplicates": false,
-  "onclick": null,
-  "showDuration": "300",
-  "hideDuration": "1000",
-  "timeOut": 10000, 
-  "extendedTimeOut": 1000,
-  "showEasing": "swing",
-  "hideEasing": "linear",
-  "showMethod": "slideDown",
-  "hideMethod": "slideUp",
-  "tapToDismiss": false
-}
+
 
 function notify(message_type,message_heading,message_content) {
     return toastr[message_type](message_content,message_heading,message_options);
 }
-function sticky_notify(message_type,message_heading,message_content) {
-    return toastr[message_type](message_content,message_heading,sticky_options);
-}
+
